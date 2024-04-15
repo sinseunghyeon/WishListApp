@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFD51CA82BCD3CF3000F3CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CA72BCD3CF3000F3CE0 /* AppDelegate.swift */; };
+		FFD51CAA2BCD3CF3000F3CE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CA92BCD3CF3000F3CE0 /* SceneDelegate.swift */; };
+		FFD51CAC2BCD3CF3000F3CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CAB2BCD3CF3000F3CE0 /* ViewController.swift */; };
+		FFD51CAF2BCD3CF3000F3CE0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FFD51CAE2BCD3CF3000F3CE0 /* Base */; };
+		FFD51CB22BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CB02BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld */; };
+		FFD51CB42BCD3CF4000F3CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFD51CB32BCD3CF4000F3CE0 /* Assets.xcassets */; };
+		FFD51CB72BCD3CF4000F3CE0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FFD51CB62BCD3CF4000F3CE0 /* Base */; };
+		FFD51CC22BCD3CF5000F3CE0 /* WishListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CC12BCD3CF5000F3CE0 /* WishListAppTests.swift */; };
+		FFD51CCC2BCD3CF5000F3CE0 /* WishListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CCB2BCD3CF5000F3CE0 /* WishListAppUITests.swift */; };
+		FFD51CCE2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CCD2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFD51CBE2BCD3CF5000F3CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD51C9C2BCD3CF3000F3CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD51CA32BCD3CF3000F3CE0;
+			remoteInfo = WishListApp;
+		};
+		FFD51CC82BCD3CF5000F3CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFD51C9C2BCD3CF3000F3CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD51CA32BCD3CF3000F3CE0;
+			remoteInfo = WishListApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFD51CA42BCD3CF3000F3CE0 /* WishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD51CA72BCD3CF3000F3CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFD51CA92BCD3CF3000F3CE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFD51CAB2BCD3CF3000F3CE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFD51CAE2BCD3CF3000F3CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFD51CB12BCD3CF3000F3CE0 /* WishListApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WishListApp.xcdatamodel; sourceTree = "<group>"; };
+		FFD51CB32BCD3CF4000F3CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFD51CB62BCD3CF4000F3CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFD51CB82BCD3CF4000F3CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD51CBD2BCD3CF5000F3CE0 /* WishListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD51CC12BCD3CF5000F3CE0 /* WishListAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppTests.swift; sourceTree = "<group>"; };
+		FFD51CC72BCD3CF5000F3CE0 /* WishListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD51CCB2BCD3CF5000F3CE0 /* WishListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITests.swift; sourceTree = "<group>"; };
+		FFD51CCD2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFD51CA12BCD3CF3000F3CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD51CBA2BCD3CF5000F3CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD51CC42BCD3CF5000F3CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFD51C9B2BCD3CF3000F3CE0 = {
+			isa = PBXGroup;
+			children = (
+				FFD51CA62BCD3CF3000F3CE0 /* WishListApp */,
+				FFD51CC02BCD3CF5000F3CE0 /* WishListAppTests */,
+				FFD51CCA2BCD3CF5000F3CE0 /* WishListAppUITests */,
+				FFD51CA52BCD3CF3000F3CE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFD51CA52BCD3CF3000F3CE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFD51CA42BCD3CF3000F3CE0 /* WishListApp.app */,
+				FFD51CBD2BCD3CF5000F3CE0 /* WishListAppTests.xctest */,
+				FFD51CC72BCD3CF5000F3CE0 /* WishListAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFD51CA62BCD3CF3000F3CE0 /* WishListApp */ = {
+			isa = PBXGroup;
+			children = (
+				FFD51CA72BCD3CF3000F3CE0 /* AppDelegate.swift */,
+				FFD51CA92BCD3CF3000F3CE0 /* SceneDelegate.swift */,
+				FFD51CAB2BCD3CF3000F3CE0 /* ViewController.swift */,
+				FFD51CAD2BCD3CF3000F3CE0 /* Main.storyboard */,
+				FFD51CB32BCD3CF4000F3CE0 /* Assets.xcassets */,
+				FFD51CB52BCD3CF4000F3CE0 /* LaunchScreen.storyboard */,
+				FFD51CB82BCD3CF4000F3CE0 /* Info.plist */,
+				FFD51CB02BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld */,
+			);
+			path = WishListApp;
+			sourceTree = "<group>";
+		};
+		FFD51CC02BCD3CF5000F3CE0 /* WishListAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD51CC12BCD3CF5000F3CE0 /* WishListAppTests.swift */,
+			);
+			path = WishListAppTests;
+			sourceTree = "<group>";
+		};
+		FFD51CCA2BCD3CF5000F3CE0 /* WishListAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFD51CCB2BCD3CF5000F3CE0 /* WishListAppUITests.swift */,
+				FFD51CCD2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift */,
+			);
+			path = WishListAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFD51CA32BCD3CF3000F3CE0 /* WishListApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD51CD12BCD3CF5000F3CE0 /* Build configuration list for PBXNativeTarget "WishListApp" */;
+			buildPhases = (
+				FFD51CA02BCD3CF3000F3CE0 /* Sources */,
+				FFD51CA12BCD3CF3000F3CE0 /* Frameworks */,
+				FFD51CA22BCD3CF3000F3CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WishListApp;
+			productName = WishListApp;
+			productReference = FFD51CA42BCD3CF3000F3CE0 /* WishListApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFD51CBC2BCD3CF5000F3CE0 /* WishListAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD51CD42BCD3CF5000F3CE0 /* Build configuration list for PBXNativeTarget "WishListAppTests" */;
+			buildPhases = (
+				FFD51CB92BCD3CF5000F3CE0 /* Sources */,
+				FFD51CBA2BCD3CF5000F3CE0 /* Frameworks */,
+				FFD51CBB2BCD3CF5000F3CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD51CBF2BCD3CF5000F3CE0 /* PBXTargetDependency */,
+			);
+			name = WishListAppTests;
+			productName = WishListAppTests;
+			productReference = FFD51CBD2BCD3CF5000F3CE0 /* WishListAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFD51CC62BCD3CF5000F3CE0 /* WishListAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFD51CD72BCD3CF5000F3CE0 /* Build configuration list for PBXNativeTarget "WishListAppUITests" */;
+			buildPhases = (
+				FFD51CC32BCD3CF5000F3CE0 /* Sources */,
+				FFD51CC42BCD3CF5000F3CE0 /* Frameworks */,
+				FFD51CC52BCD3CF5000F3CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFD51CC92BCD3CF5000F3CE0 /* PBXTargetDependency */,
+			);
+			name = WishListAppUITests;
+			productName = WishListAppUITests;
+			productReference = FFD51CC72BCD3CF5000F3CE0 /* WishListAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFD51C9C2BCD3CF3000F3CE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					FFD51CA32BCD3CF3000F3CE0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					FFD51CBC2BCD3CF5000F3CE0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = FFD51CA32BCD3CF3000F3CE0;
+					};
+					FFD51CC62BCD3CF5000F3CE0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = FFD51CA32BCD3CF3000F3CE0;
+					};
+				};
+			};
+			buildConfigurationList = FFD51C9F2BCD3CF3000F3CE0 /* Build configuration list for PBXProject "WishListApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFD51C9B2BCD3CF3000F3CE0;
+			productRefGroup = FFD51CA52BCD3CF3000F3CE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFD51CA32BCD3CF3000F3CE0 /* WishListApp */,
+				FFD51CBC2BCD3CF5000F3CE0 /* WishListAppTests */,
+				FFD51CC62BCD3CF5000F3CE0 /* WishListAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFD51CA22BCD3CF3000F3CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD51CB42BCD3CF4000F3CE0 /* Assets.xcassets in Resources */,
+				FFD51CB72BCD3CF4000F3CE0 /* Base in Resources */,
+				FFD51CAF2BCD3CF3000F3CE0 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD51CBB2BCD3CF5000F3CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD51CC52BCD3CF5000F3CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFD51CA02BCD3CF3000F3CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD51CB22BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld in Sources */,
+				FFD51CAC2BCD3CF3000F3CE0 /* ViewController.swift in Sources */,
+				FFD51CA82BCD3CF3000F3CE0 /* AppDelegate.swift in Sources */,
+				FFD51CAA2BCD3CF3000F3CE0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD51CB92BCD3CF5000F3CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD51CC22BCD3CF5000F3CE0 /* WishListAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFD51CC32BCD3CF5000F3CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD51CCC2BCD3CF5000F3CE0 /* WishListAppUITests.swift in Sources */,
+				FFD51CCE2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFD51CBF2BCD3CF5000F3CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD51CA32BCD3CF3000F3CE0 /* WishListApp */;
+			targetProxy = FFD51CBE2BCD3CF5000F3CE0 /* PBXContainerItemProxy */;
+		};
+		FFD51CC92BCD3CF5000F3CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFD51CA32BCD3CF3000F3CE0 /* WishListApp */;
+			targetProxy = FFD51CC82BCD3CF5000F3CE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFD51CAD2BCD3CF3000F3CE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD51CAE2BCD3CF3000F3CE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFD51CB52BCD3CF4000F3CE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD51CB62BCD3CF4000F3CE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFD51CCF2BCD3CF5000F3CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFD51CD02BCD3CF5000F3CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFD51CD22BCD3CF5000F3CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5259JUBP8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WishListApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seunghyeon.WishListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFD51CD32BCD3CF5000F3CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5259JUBP8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WishListApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seunghyeon.WishListApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFD51CD52BCD3CF5000F3CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5259JUBP8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seunghyeon.WishListAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WishListApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WishListApp";
+			};
+			name = Debug;
+		};
+		FFD51CD62BCD3CF5000F3CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5259JUBP8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seunghyeon.WishListAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WishListApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WishListApp";
+			};
+			name = Release;
+		};
+		FFD51CD82BCD3CF5000F3CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5259JUBP8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seunghyeon.WishListAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WishListApp;
+			};
+			name = Debug;
+		};
+		FFD51CD92BCD3CF5000F3CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5259JUBP8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Seunghyeon.WishListAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WishListApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFD51C9F2BCD3CF3000F3CE0 /* Build configuration list for PBXProject "WishListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD51CCF2BCD3CF5000F3CE0 /* Debug */,
+				FFD51CD02BCD3CF5000F3CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD51CD12BCD3CF5000F3CE0 /* Build configuration list for PBXNativeTarget "WishListApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD51CD22BCD3CF5000F3CE0 /* Debug */,
+				FFD51CD32BCD3CF5000F3CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD51CD42BCD3CF5000F3CE0 /* Build configuration list for PBXNativeTarget "WishListAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD51CD52BCD3CF5000F3CE0 /* Debug */,
+				FFD51CD62BCD3CF5000F3CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFD51CD72BCD3CF5000F3CE0 /* Build configuration list for PBXNativeTarget "WishListAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFD51CD82BCD3CF5000F3CE0 /* Debug */,
+				FFD51CD92BCD3CF5000F3CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FFD51CB02BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FFD51CB12BCD3CF3000F3CE0 /* WishListApp.xcdatamodel */,
+			);
+			currentVersion = FFD51CB12BCD3CF3000F3CE0 /* WishListApp.xcdatamodel */;
+			path = WishListApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FFD51C9C2BCD3CF3000F3CE0 /* Project object */;
+}
