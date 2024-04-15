@@ -17,7 +17,7 @@ struct WishData: Decodable {
     private let stock: Int
     private let brand: String
     private let category: String?
-    private  let thumbnail: String?
+    private let thumbnail: String?
     private let image: String?
     
     enum CodingKeys: String, CodingKey {
