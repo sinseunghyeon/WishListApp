@@ -17,6 +17,7 @@
 		FFD51CC22BCD3CF5000F3CE0 /* WishListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CC12BCD3CF5000F3CE0 /* WishListAppTests.swift */; };
 		FFD51CCC2BCD3CF5000F3CE0 /* WishListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CCB2BCD3CF5000F3CE0 /* WishListAppUITests.swift */; };
 		FFD51CCE2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CCD2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift */; };
+		FFD51CDC2BCD3E78000F3CE0 /* WishData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CDB2BCD3E78000F3CE0 /* WishData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FFD51CC72BCD3CF5000F3CE0 /* WishListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WishListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD51CCB2BCD3CF5000F3CE0 /* WishListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITests.swift; sourceTree = "<group>"; };
 		FFD51CCD2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFD51CDB2BCD3E78000F3CE0 /* WishData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		FFD51CA62BCD3CF3000F3CE0 /* WishListApp */ = {
 			isa = PBXGroup;
 			children = (
+				FFD51CDA2BCD3E4D000F3CE0 /* Models */,
 				FFD51CA72BCD3CF3000F3CE0 /* AppDelegate.swift */,
 				FFD51CA92BCD3CF3000F3CE0 /* SceneDelegate.swift */,
 				FFD51CAB2BCD3CF3000F3CE0 /* ViewController.swift */,
@@ -128,6 +131,14 @@
 				FFD51CCD2BCD3CF5000F3CE0 /* WishListAppUITestsLaunchTests.swift */,
 			);
 			path = WishListAppUITests;
+			sourceTree = "<group>";
+		};
+		FFD51CDA2BCD3E4D000F3CE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFD51CDB2BCD3E78000F3CE0 /* WishData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			files = (
 				FFD51CB22BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld in Sources */,
 				FFD51CAC2BCD3CF3000F3CE0 /* ViewController.swift in Sources */,
+				FFD51CDC2BCD3E78000F3CE0 /* WishData.swift in Sources */,
 				FFD51CA82BCD3CF3000F3CE0 /* AppDelegate.swift in Sources */,
 				FFD51CAA2BCD3CF3000F3CE0 /* SceneDelegate.swift in Sources */,
 			);
@@ -454,6 +466,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -482,6 +495,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
