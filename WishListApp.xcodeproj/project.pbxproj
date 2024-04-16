@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0469EF2BCE6B3E00FECEF6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0469EE2BCE6B3E00FECEF6 /* NetworkManager.swift */; };
 		FFD51CA82BCD3CF3000F3CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CA72BCD3CF3000F3CE0 /* AppDelegate.swift */; };
 		FFD51CAA2BCD3CF3000F3CE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CA92BCD3CF3000F3CE0 /* SceneDelegate.swift */; };
 		FFD51CAC2BCD3CF3000F3CE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD51CAB2BCD3CF3000F3CE0 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF0469EE2BCE6B3E00FECEF6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FFD51CA42BCD3CF3000F3CE0 /* WishListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD51CA72BCD3CF3000F3CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD51CA92BCD3CF3000F3CE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +113,7 @@
 				FFD51CB32BCD3CF4000F3CE0 /* Assets.xcassets */,
 				FFD51CB52BCD3CF4000F3CE0 /* LaunchScreen.storyboard */,
 				FFD51CB82BCD3CF4000F3CE0 /* Info.plist */,
-				FFD51CB02BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld */,
+				FF0469EE2BCE6B3E00FECEF6 /* NetworkManager.swift */,
 			);
 			path = WishListApp;
 			sourceTree = "<group>";
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				FFD51CDB2BCD3E78000F3CE0 /* WishData.swift */,
+				FFD51CB02BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0469EF2BCE6B3E00FECEF6 /* NetworkManager.swift in Sources */,
 				FFD51CB22BCD3CF3000F3CE0 /* WishListApp.xcdatamodeld in Sources */,
 				FFD51CAC2BCD3CF3000F3CE0 /* ViewController.swift in Sources */,
 				FFD51CDC2BCD3E78000F3CE0 /* WishData.swift in Sources */,

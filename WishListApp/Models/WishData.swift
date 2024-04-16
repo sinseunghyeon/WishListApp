@@ -10,20 +10,20 @@ import Foundation
 struct WishData: Decodable {
     private let id: Int
     private let name: String
-    private let description: String
+    private let descriptions: String
     private let price: Int
     private let discountPercentage: Double?
-    private let rating: Double
-    private let stock: Int
-    private let brand: String
+    private let rating: Double?
+    private let stock: Int?
+    private let brand: String?
     private let category: String?
-    private let thumbnail: String?
+    private let thumbnail: String
     private let image: String?
     
     enum CodingKeys: String, CodingKey {
         case id
         case name = "title"
-        case description
+        case descriptions = "description"
         case price
         case discountPercentage
         case rating
@@ -35,19 +35,19 @@ struct WishData: Decodable {
     }
     
     public func getId() -> Int {
-        return id
+        return self.id
     }
     
     public func getName() -> String {
-        return name
+        return self.name
     }
     
-    public func getDescription() -> String {
-        return description
+    public func getDescriptions() -> String {
+        return self.descriptions
     }
     
     public func getPrice() -> Int {
-        return price
+        return self.price
     }
     
     public func getDiscountPercentage() -> Double {
@@ -58,15 +58,24 @@ struct WishData: Decodable {
     }
     
     public func getRating() -> Double {
-        return rating
+        if let rating = self.rating {
+            return rating
+        }
+        return 0.0
     }
     
     public func getStock() -> Int {
-        return stock
+        if let stock = self.stock {
+            return stock
+        }
+        return 0
     }
     
     public func getBrand() -> String {
-        return brand
+        if let brand = self.brand {
+            return brand
+        }
+        return "None"
     }
     
     public func getCategory() -> String {
@@ -77,10 +86,7 @@ struct WishData: Decodable {
     }
     
     public func getThumbnail() -> String {
-        if let thumbnail = self.thumbnail {
-            return thumbnail
-        }
-        return "None"
+        return self.thumbnail
     }
     
     public func getImage() -> String {

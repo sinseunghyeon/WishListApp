@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="WishData" representedClassName="WishData" syncable="YES" codeGenerationType="class">
+    <entity name="WishListData" representedClassName="WishListData" syncable="YES" codeGenerationType="class">
         <attribute name="brand" optional="YES" attributeType="String"/>
         <attribute name="category" optional="YES" attributeType="String"/>
-        <attribute name="description2" optional="YES" attributeType="String"/>
+        <attribute name="descriptions" attributeType="String"/>
         <attribute name="discountPercentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="String"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="price" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="stock" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="thumbnail" optional="YES" attributeType="String"/>
+        <attribute name="thumbnail" attributeType="String"/>
     </entity>
 </model>

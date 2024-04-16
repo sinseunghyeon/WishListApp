@@ -6,14 +6,27 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
+    
+    var persistentContainer: NSPersistentContainer? {
+        (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
+    }
+    let networkManager = NetworkManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        networkManager.fetchProducts(id: 1) { result in
+            switch result {
+            case .success(let wishData):
+                print("Sucess")
+                print(wishData)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
-
 
 }
 
