@@ -95,7 +95,13 @@ extension ViewController {
         uiDescriptionLabel.text = wishData.getDescriptions()
         
         uiSubStackView.addArrangedSubview(uiPriceLabel)
-        uiPriceLabel.text = String(wishData.getPrice()) + " $"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if let formattedPrice = formatter.string(from: NSNumber(value: wishData.getPrice())) {
+            uiPriceLabel.text = "\(formattedPrice) $"
+        } else {
+            uiPriceLabel.text = "\(wishData.getPrice()) $"
+        }
         
         uiSubStackView.addArrangedSubview(uiHorizonStackView)
         uiHorizonStackView.axis = .horizontal

@@ -21,6 +21,17 @@ class TableViewController: UITableViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        // UITableViewController의 기존 refreshControl 프로퍼티를 직접 사용합니다.
+        if let refreshControl = tableView.refreshControl {
+            refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+            refreshControl.attributedTitle = NSAttributedString(string: "당겨서 새로고침")
+        } else {
+            let newRefreshControl = UIRefreshControl()
+            newRefreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+            newRefreshControl.attributedTitle = NSAttributedString(string: "당겨서 새로고침")
+            tableView.refreshControl = newRefreshControl
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,7 +42,15 @@ class TableViewController: UITableViewController {
         let data = wishListDatas[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "[\(data.id)] \(data.name!) - \(data.price) $"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if let formattedPrice = formatter.string(from: NSNumber(value: data.price)),
+           let unwrapName = data.name {
+            cell.textLabel?.text = "[\(data.id)] \(unwrapName) - \(formattedPrice) $"
+        } else {
+            cell.textLabel?.text = "[\(data.id)] \(data.name ?? "None") - \(data.price) $"
+        }
+        
         
         return cell
     }
@@ -42,5 +61,11 @@ class TableViewController: UITableViewController {
             wishListDataManager.deleteData(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    @objc func refreshData(_ sender: UIRefreshControl) {
+        self.wishListDatas = self.wishListDataManager.readData()
+        self.tableView.reloadData()
+        refreshControl?.endRefreshing()
     }
 }
