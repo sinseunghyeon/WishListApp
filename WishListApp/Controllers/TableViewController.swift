@@ -31,8 +31,16 @@ class TableViewController: UITableViewController {
         let data = wishListDatas[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = "[\(data.id)] \(data.name) - \(data.price) $"
+        cell.textLabel?.text = "[\(data.id)] \(data.name!) - \(data.price) $"
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            wishListDatas.remove(at: indexPath.row)
+            wishListDataManager.deleteData(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 }
