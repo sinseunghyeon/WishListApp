@@ -15,12 +15,12 @@ class WishListDataManager {
     }
     
     func createData(wishData: WishData) {
-        
-        guard let wishListData = self.persistentContainer?.viewContext else {
+        guard let viewContext = self.persistentContainer?.viewContext else {
+            print("Error: Can't access Core Data view context")
             return
         }
 
-        let newWishData = WishListData(context: wishListData)
+        let newWishData = WishListData(context: viewContext)
 
         newWishData.id = wishData.getId()
         newWishData.name = wishData.getName()
@@ -28,41 +28,56 @@ class WishListDataManager {
         newWishData.price = wishData.getPrice()
         newWishData.thumbnail = wishData.getThumbnail()
 
-        print(newWishData)
-        try? wishListData.save()
+        do {
+            try viewContext.save()
+            print("Data saved successfully")
+        } catch {
+            print("Failed to save data: \(error.localizedDescription)")
+        }
     }
+
     
     func readData() -> [WishListData] {
-        
-        if let wishListData = self.persistentContainer?.viewContext {
-            
-            let request = WishListData.fetchRequest()
-            
-            if let wishListDatas = try? wishListData.fetch(request) {
-                return wishListDatas
-            }
-        } else {
-            print("Error: Can't read Core Data")
+        guard let viewContext = self.persistentContainer?.viewContext else {
+            print("Error: Can't access Core Data view context")
+            return []
         }
-        return []
+        
+        let request = WishListData.fetchRequest()
+        
+        do {
+            let wishListDatas = try viewContext.fetch(request)
+            return wishListDatas
+        } catch {
+            print("Error fetching data from CoreData: \(error.localizedDescription)")
+            return []
+        }
     }
     
-    func deleteData(indexPath: Int) {
+    func deleteData(at index: Int) {
+        guard let viewContext = self.persistentContainer?.viewContext else {
+            print("Error: Can't access Core Data view context")
+            return
+        }
         
-        guard let wishListData = self.persistentContainer?.viewContext else {
-            return
-        }
-
         let request = WishListData.fetchRequest()
-
-        guard let wishListDatas = try? wishListData.fetch(request) else {
-            return
+        
+        do {
+            let wishListDatas = try viewContext.fetch(request)
+            // 인덱스 유효성 검사
+            guard wishListDatas.indices.contains(index) else {
+                print("Error: Index out of range")
+                return
+            }
+            // 인덱스에 해당하는 데이터 삭제
+            let dataToDelete = wishListDatas[index]
+            viewContext.delete(dataToDelete)
+            
+            // 변경 사항 저장
+            try viewContext.save()
+            print("Data deleted successfully")
+        } catch {
+            print("Failed to delete data: \(error.localizedDescription)")
         }
-
-//        let filteredCars = wishListDatas.filter({ $0.name == "tesla" })
-
-//        wishListData.delete(wishListData[indexPath])
-
-        try? wishListData.save()
     }
 }

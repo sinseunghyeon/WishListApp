@@ -14,11 +14,13 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.wishListDatas = self.wishListDataManager.readData()
+        self.setTableView()
     }
     
     func setTableView() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,12 +28,10 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let wishListDatas = wishListDataManager.readData()
+        let data = wishListDatas[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell(style: .default, reuseIdentifier: "cell")
-        for data in wishListDatas {
-            cell.textLabel?.text = data.name
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = "[\(data.id)] \(data.name) - \(data.price) $"
         
         return cell
     }
