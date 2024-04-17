@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 final class NetworkManager {
     let url = "https://dummyjson.com/products/"
@@ -38,6 +39,40 @@ final class NetworkManager {
                 completion(.success(hasData))
             } catch {
                 completion(.failure(error))
+            }
+        }
+            
+        // 네트워크 요청 시작
+        task.resume()
+    }
+    
+    func downloadImage(id: Int, completion: @escaping (Result<UIImage, Error>) -> Void) {
+        let imageUrl = "https://cdn.dummyjson.com/product-images/\(id)/thumbnail.jpg"
+        
+        guard let imageUrl = URL(string: imageUrl) else {
+            completion(.failure(NSError()))
+            return
+        }
+        
+        var request = URLRequest(url: imageUrl)
+        request.httpMethod = "GET"
+        
+        // URLSession 인스턴스 생성
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let data else {
+                completion(.failure(NSError()))
+                return
+            }
+            
+            if let image = UIImage(data: data) {
+                completion(.success(image))
+            } else {
+                completion(.failure(NSError()))
             }
         }
             
