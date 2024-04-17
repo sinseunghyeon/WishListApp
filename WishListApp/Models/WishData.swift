@@ -8,13 +8,13 @@
 import Foundation
 
 struct WishData: Decodable {
-    private let id: Int
+    private let id: Int64
     private let name: String
     private let descriptions: String
-    private let price: Int
+    private let price: Int64
     private let discountPercentage: Double?
     private let rating: Double?
-    private let stock: Int?
+    private let stock: Int64?
     private let brand: String?
     private let category: String?
     private let thumbnail: String
@@ -34,7 +34,7 @@ struct WishData: Decodable {
         case image
     }
     
-    public func getId() -> Int {
+    public func getId() -> Int64 {
         return self.id
     }
     
@@ -46,7 +46,7 @@ struct WishData: Decodable {
         return self.descriptions
     }
     
-    public func getPrice() -> Int {
+    public func getPrice() -> Int64 {
         return self.price
     }
     
@@ -64,7 +64,7 @@ struct WishData: Decodable {
         return 0.0
     }
     
-    public func getStock() -> Int {
+    public func getStock() -> Int64 {
         if let stock = self.stock {
             return stock
         }
